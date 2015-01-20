@@ -1,0 +1,18 @@
+<h1>Edit Crazy Car</h1>
+
+<%= form_for @edit_car do |f| %>
+	<%= f.label :make %> 
+	<%= f.text_field :make %>
+	<br>
+	<%= f.label :model %>
+	<%= f.text_field :model %>
+	<br>
+	<%= f.label :year %>
+	<%= f.text_field :year %>	
+	<br>
+	<%= f.label :color %>
+	<%= f.text_field :color %>	
+	<br>
+	<%= f.submit %>
+
+<% end %> 

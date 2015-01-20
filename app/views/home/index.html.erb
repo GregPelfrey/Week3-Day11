@@ -3,10 +3,12 @@
 <ul>
 <% @cars.each do |car|%>
 	<li>
-		<% car.make %>
-		<% car.model %>
-		<% car.year %>
-		<% car.color %>
+		<%= car.make %>
+		<%= car.model %>
+		<%= car.year %>
+		<%= car.color %>
+		<%= link_to "Show", car_path(car) %>
+		<%= link_to "Edit", car_path(car) %>
 	</li>
-
+<% end %>
 </ul>

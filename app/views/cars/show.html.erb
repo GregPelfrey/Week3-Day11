@@ -1,8 +1,13 @@
 <h1>New Car</h1>
 
-<%= @car.make %>
-<%= @car.model %>
-<%= @car.year %>
+<%= @car.make %><br>
+<%= @car.model %><BR>
+<%= @car.year %><BR>
 <%= @car.color %>
 
+<%= link_to "Delete", car_path(@car), method: :delete%><br>
+
+<%= link_to "Edit", edit_car_path(@car) %>
+
 <% link_to "Home Page", root_path %>
+
